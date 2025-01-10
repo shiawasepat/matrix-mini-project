@@ -51,7 +51,7 @@ if __name__ == "__main__":
                     time.sleep(1)
                     clear_console()
                     print("Hasil Penjumlahan Matriks:")
-                    display_matrix(jumlah(matrix1, matrix2))
+                    display_matrix(add_matrix(matrix1, matrix2))
                 else:
                     time.sleep(1)
                     clear_console()
@@ -62,14 +62,14 @@ if __name__ == "__main__":
                     time.sleep(1)
                     clear_console()
                     print("Hasil Pengurangan Matriks:")
-                    display_matrix(kurang(matrix1, matrix2))
+                    display_matrix(subtract_matrix(matrix1, matrix2))
                 else:
                     time.sleep(1)
                     clear_console()
                     print("Matriks harus memiliki ukuran yang sama untuk dikurangkan.")
 
             elif choice == 3:
-                result = kali(matrix1, matrix2)
+                result = multiply_matrix(matrix1, matrix2)
                 if result:
                     time.sleep(1)
                     clear_console()
